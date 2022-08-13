@@ -18,10 +18,10 @@
       <div class="text-center">
         <a
           v-if="userInfo"
-          :href="`/.auth/logout?post_logout_redirect_uri=/.auth/login/aadb2c`"
+          :href="`/.auth/logout?post_logout_redirect_uri=https://kaifamilyfarm.b2clogin.com/kaifamilyfarm.onmicrosoft.com/oauth2/v2.0/authorize?p=B2C_1_signupsignin1&client_id=119aabbb-a6b0-40bb-9bda-93bcdb97c7e5&nonce=defaultNonce&redirect_uri=https%3A%2F%2Fkind-bay-0ead8b40f.1.azurestaticapps.net%2F&scope=openid&response_type=code&prompt=login&code_challenge_method=S256&code_challenge=XyH4YviZfuYTVMjm534c-gUq0kzusqXNHxub8s_yvkQ`"
           ><button class="email">Logout</button></a
         >
-        <a v-if="!userInfo" :href="`/.auth/login/aadb2c`"
+        <a v-if="!userInfo" :href="`https://kaifamilyfarm.b2clogin.com/kaifamilyfarm.onmicrosoft.com/oauth2/v2.0/authorize?p=B2C_1_signupsignin1&client_id=119aabbb-a6b0-40bb-9bda-93bcdb97c7e5&nonce=defaultNonce&redirect_uri=https%3A%2F%2Fkind-bay-0ead8b40f.1.azurestaticapps.net%2F&scope=openid&response_type=code&prompt=login&code_challenge_method=S256&code_challenge=XyH4YviZfuYTVMjm534c-gUq0kzusqXNHxub8s_yvkQ`"
           ><button class="email">Login</button></a
         >
       </div>
