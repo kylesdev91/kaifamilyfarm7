@@ -90,11 +90,31 @@ export default {
             '</td></td>'
           );
         }, '');
+
+        // let productSMS = []
+        // this.products.forEach( doc => {
+        //   productSMS.push({
+        //     item: doc.name,
+        //     qty: doc.quantity
+        //   })
+        // })
+        // for (product in this.products)
+        // var contentSMS = this.products.reduce(function (a, b) {
+        //   return (
+        //     'Item: ' +
+        //     b.name +
+        //     ' - Qty: ' +
+        //     b.quantity +
+        //     ' **** '
+        //   );
+        // });
+
         var formData = {
           emailSubject: 'Online Order',
           emailBody: content,
           orderTotal: 'Total: ' + '$' + this.$store.getters.cartTotal,
           emailAddress: this.userInfo.userDetails,
+          // emailOrderedProducts: productSMS
         };
         try {
           await axios.post('/api/sendemail', formData).then((response) => {
