@@ -18,10 +18,10 @@
       <div class="text-center">
         <a
           v-if="userInfo"
-          :href="`/.auth/logout?post_logout_redirect_uri=/.auth/login/aad`"
+          :href="`/.auth/logout?post_logout_redirect_uri=/.auth/login/aadb2c`"
           ><button class="email">Logout</button></a
         >
-        <a v-if="!userInfo" :href="`/.auth/login/aad`"
+        <a v-if="!userInfo" :href="`/.auth/login/aadb2c`"
           ><button class="email">Login</button></a
         >
       </div>
